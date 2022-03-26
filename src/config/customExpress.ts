@@ -25,7 +25,7 @@ router(app)
 
 app.use('/public', express.static( path.join( __dirname, '../../public')))
 app.use(( req: Request, res: Response ) => {
-    res.status(404).send('Página não foi encontrada')
+    res.render('pages/erro404')
 })
 
 export default app;

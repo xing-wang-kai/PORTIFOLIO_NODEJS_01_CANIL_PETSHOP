@@ -1,9 +1,9 @@
 :root {
-    --pagebg: #FFF;
-    --main: #102581;
-    --bglink: rgba(0, 0, 0, 0.3);
-    --darkbg: #FFF;
-    --lightbg: #000;
+    --pagebg: #D8E9A8;
+    --main: #191A19;
+    --bglink: #4E9F3D;
+    --darkbg: #1E5128;
+    --lightbg: #4E9F3D;
     --lighter: #444;
 }
 
@@ -51,7 +51,7 @@ ul {
     justify-content: space-around;
 }
 ul li a {
-    color: var(--darkbg);
+    color: var(--pagebg);
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 10px;
@@ -69,10 +69,10 @@ ul li:hover a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--darkbg);
+    color: var( --pagebg );
     font-size: 36px;
     font-weight: bold;
-    text-shadow: 1px 1px 1px var(--lighter);
+    text-shadow: 1px 4px 5px black;
     margin-bottom: 30px;
 }
 
@@ -94,23 +94,43 @@ h2 {
 }
 .item {
     color: var(--lightbg);
+    border-radius: 100px 100px 5px 5px;
+    transition: 1.2s;
 }
+.item:hover {
+    background-color: var( --darkbg );
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+.item:hover .item--name {
+    color: var( --pagebg );
+}
+
+.item:hover .item--image {
+    border-radius: 100px;
+    transition: 1.2s;
+} 
 .item--image {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: 1.2s;
 }
+
 .item--name {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 5px;
+    color: var( --main );
+    text-align: center;  
 }
+
 .item--type,
 .item--color,
 .item--genre {
     font-size: 13px;
-    color: var(--lighter);
-    margin-bottom: 3px;
+    margin-bottom: 20px;
+    margin-left:20px;
 }
 
 footer {
