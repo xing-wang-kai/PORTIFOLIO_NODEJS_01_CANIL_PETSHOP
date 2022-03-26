@@ -59,6 +59,10 @@ ul li a {
 ul li.active a,
 ul li:hover a {
     background: var(--bglink);
+    padding: 10px 60px;
+}
+ul li.active{
+   
 }
 
 .banner {
